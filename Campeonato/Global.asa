@@ -1,0 +1,53 @@
+<Script Runat=Server Language=VBScript>
+
+'  -------------------------------------------------------------
+'  Program      : Global.asa
+'  Description  : Parametros globais do sistema Campeonato
+'  Version      : 1.0
+'  Date         : 24/06/2005
+'  Author       : Juan Sirgado y Antico
+'  Copyright(c) 2005 by JSyA Informática. All Rights Reserved.
+'  -------------------------------------------------------------
+'  Version      :
+'  Date         :
+'  Author       :
+'  -------------------------------------------------------------
+
+Sub Aplication_OnStart
+    Response.Buffer = True
+    Response.Clear
+    Response.Expires = 0
+    Application("app_dt_start")  = Now
+    Application("app_qt_users")  = 0
+    Application("app_qt_online") = 0
+End Sub
+
+Sub Session_OnStart
+
+    Session.Timeout = 12
+    Application.Lock
+    If Application("app_dt_start") = "" Then
+       Application("app_dt_start")  = Now
+    End If
+    Application("app_qt_users")  = Application("app_qt_users")  + 1
+    Application("app_qt_online") = Application("app_qt_online") + 1
+    Application.Unlock
+ 
+End Sub
+
+Sub Session_OnEnd
+
+    Application.Lock
+    Application("app_qt_online") = Application("app_qt_online") - 1
+    Application.Unlock
+    Session.Abandon
+
+    Response.Redirect("http://jsya/campeonato/")
+
+End Sub
+
+Sub Aplication_OnEnd
+    Session.Abandon
+End Sub
+
+</Script>

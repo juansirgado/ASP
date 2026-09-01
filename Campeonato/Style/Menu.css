@@ -1,0 +1,88 @@
+<!--
+   -------------------------------------------------------------
+   Program      : Menu.css
+   Description  : Estilo de fonte e cor para página de menu
+   Version      : 1.0
+   Date         : 28/06/2005
+   Author       : Juan Sirgado y Antico
+   Copyright(c) 2005 by JSyA IT Innovation. All Rights Reserved.
+   -------------------------------------------------------------
+   Version      :
+   Date         :
+   Author       :
+   -------------------------------------------------------------
+-->
+
+a: 
+{font-family    : Verdana, Arial, Helvetica, SansSerif;
+ font-weight    : bold;
+ font-size      : 10pt; 
+ color          : #000000; 
+ text-decoration: none;}
+
+a:link 
+{font-family    : Verdana, Arial, Helvetica, SansSerif;
+ font-weight    : bold;
+ font-size      : 10pt; 
+ color          : #000000; 
+ text-decoration: none;}
+
+a:visited 
+{font-family    : Verdana, Arial, Helvetica, SansSerif;
+ font-weight    : bold;
+ font-size      : 10pt; 
+ color          : #000000; 
+ text-decoration: none;}
+
+a:active 
+{font-family    : Verdana, Arial, Helvetica, SansSerif;
+ font-weight    : bold;
+ font-size      : 10pt; 
+ color          : #000000; 
+ text-decoration: none;}
+
+a:hover 
+{font-family    : Verdana, Arial, Helvetica, SansSerif;
+ font-weight    : bold;
+ font-size      : 12pt; 
+ color          : #777777; 
+ text-decoration: none;}
+
+body
+{background-color     : #DDFFDD;
+ background-attachment: fixed;
+ background-repeat    : repeat-y;
+ background-position  : left;
+ background-image     : none;}
+ 
+h4
+{font-family    : Verdana, Arial, Helvetica, SansSerif;
+ font-weight    : bold;
+ font-size      : 12pt; 
+ color          : #000000; 
+ text-decoration: none;}
+
+.table2
+{color            : #33AA33;
+ background-color : #FFFFFF;
+ border           : 2px;}
+
+.td2
+{font-family     : Verdana, Arial, Helvetica, SansSerif; 
+ font-weight     : bold;
+ font-size       : 12px;
+ color           : #000000;
+ border-top      : #FFFFFF thin solid;
+ border-right    : #FFFFFF thin solid;
+ border-left     : #FFFFFF thin solid;
+ border-bottom   : #FFFFFF thin solid;
+ border           : 1px;
+ width            : 158px;
+ height           : 78px;
+ background-color: none;}
+
+.img2
+{color            : #006600; 
+ background-color : #FFFFFF;
+ width            : 160px;
+ height           : 76px;}
