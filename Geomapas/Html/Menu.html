@@ -1,0 +1,178 @@
+<html>
+
+<!--
+   Instalação : EDS do Brasil - BSC
+   Descrição  : Página inicial do Controle de Atividades
+   Autor      : Juan Sirgado y Antico
+   Data       : 24/09/2000
+   Copyright(c) 2000 by EDS do Brasil, Inc. All Rights Reserved.
+   -------------------------------------------------------------
+   Alteração  :
+   Autor      :
+   Data       :
+-->
+
+<head>
+   <title>Geomapas - Guia São Paulo 2001</title>
+   <link rel="stylesheet" href="../Style/Mapa.css" type="text/css">
+</head>
+
+<body class="fundo">
+<form method="post" name="frmMenu" action="../Content/Mapa.asp" target="body">
+
+<input type="hidden" name="hidPage" value="1">
+<input type="hidden" name="hidLetter" value="w">
+
+<table cellspacing="0" cellpadding="0" border="0" class="Menu">
+   <tr>
+      <td><b>Procurar:</b></td>
+   </tr>
+   <tr>
+      <td><input type="radio" name="radType" checked><i>Logradouro</i></td>
+   </tr>
+   <tr>
+      <td><input type="radio" name="radType"><i>CEP</i></td>
+   </tr>
+   <tr>
+      <td><input type="radio" name="radType"><i>Bairro<i/></td>
+   </tr>
+   <tr>
+      <td><input type="radio" name="radType"><i>Distrito</i></td>
+   </tr>
+   <tr>
+      <td><input type="textbox" name="texKey" size="10"></td>
+   </tr>
+</table>
+<br>
+<table cellspacing="0" cellpadding="0" border="0" class="Menu">
+   <tr>
+      <td colspan="3"><b>Navegar:</b></td>
+   </tr>
+   <tr>
+      <td>&nbsp;</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td align="center">
+         <a href="javascript:if (frmMenu.hidPage.value > 16)
+                                {frmMenu.hidPage.value = eval(frmMenu.hidPage.value) - 16};
+                             frmMenu.submit();">
+         <img border="0" src="../Media/bot_red.gif" name="up"
+              onMouseover="javascript:this.src = '../Media/bot_green.gif';"
+              onMouseout="javascript:this.src = '../Media/bot_red.gif';"></a>
+      </td>
+      <td></td>
+   </tr>
+   <tr>
+      <td align="center">
+         <a href="javascript:if (frmMenu.hidPage.value > 1)
+                                {frmMenu.hidPage.value = eval(frmMenu.hidPage.value) - 1};
+                             frmMenu.submit();">
+         <img border="0" src="../Media/bot_red.gif" name="left"
+              onMouseover="javascript:this.src = '../Media/bot_green.gif';"
+              onMouseout="javascript:this.src = '../Media/bot_red.gif';"></a>
+      </td>
+      <td align="center">
+         <a href="javascript:frmMenu.submit();">
+         <img border="0" src="../Media/bot_g_yellow.gif" name="center"
+              onMouseover="javascript:this.src = '../Media/bot_g_yellow.gif';"
+              onMouseout="javascript:this.src = '../Media/bot_g_yellow.gif';"></a>
+      </td>
+      <td align="center">
+         <a href="javascript:if (frmMenu.hidPage.value < 142)
+                                {frmMenu.hidPage.value = eval(frmMenu.hidPage.value) + 1};
+                             frmMenu.submit();">
+         <img border="0" src="../Media/bot_red.gif" name="right"
+              onMouseover="javascript:this.src = '../Media/bot_green.gif';"
+              onMouseout="javascript:this.src = '../Media/bot_red.gif';"></a>
+   </td>
+   </tr>
+   <tr>
+      <td></td>
+      <td align="center">
+         <a href="javascript:if (frmMenu.hidPage.value < 127)
+                                {frmMenu.hidPage.value = eval(frmMenu.hidPage.value) + 16};
+                             frmMenu.submit();">
+         <img border="0" src="../Media/bot_red.gif" name="down"
+              onMouseover="javascript:this.src = '../Media/bot_green.gif';"
+              onMouseout="javascript:this.src = '../Media/bot_red.gif';"></a>
+      </td>
+      <td></td>
+   </tr>
+   <tr>
+      <td align="center" colspan="3">
+         <input type="button" name="up" value="Mapa"
+                onclick="javascript:parent.body.location='../Html/Mapa.html';"></td>
+   </tr>
+   <tr>
+</table>
+<br>
+<table cellspacing="0" cellpadding="0" border="0" class="Menu">
+   <tr>
+      <td><b>Linhas:</b></td>
+      <td>
+         <select name="selLines">
+            <option value="1">1</option>
+            <option value="3" selected>3</option>
+            <option value="5">5</option>
+            <option value="7">7</option>
+            <option value="9">9</option>
+            <option value="11">11</option>
+            <option value="13">13</option>
+            <option value="15">15</option>
+         </select>
+      </td>
+   </tr>
+   <tr>
+      <td><b>Colunas:</b></td>
+      <td>
+         <select name="selColumns">
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="5" selected>5</option>
+            <option value="7">7</option>
+            <option value="9">9</option>
+            <option value="11">11</option>
+            <option value="13">13</option>
+            <option value="15">15</option>
+            <option value="17">17</option>
+            <option value="19">19</option>
+            <option value="21">21</option>
+            <option value="23">23</option>
+            <option value="25">25</option>
+         </select>
+      </td>
+   </tr>
+   <tr>
+      <td><b>EscalaX:</b></td>
+      <td>
+         <select name="selFrameX">
+            <option value="025042">0.1</option>
+            <option value="050083">0.2</option>
+            <option value="100166" selected>0.4</option>
+            <option value="150249">0.6</option>
+            <option value="200332">0.8</option>
+            <option value="250415">1.0</option>
+            <option value="500830">2.0</option>
+         </select>
+      </td>
+   </tr>
+   <tr>
+      <td><b>EscalaY:</b></td>
+      <td>
+         <select name="selFrameY">
+            <option value="025042">0.1</option>
+            <option value="050083">0.2</option>
+            <option value="100166" selected>0.4</option>
+            <option value="150249">0.6</option>
+            <option value="200332">0.8</option>
+            <option value="250415">1.0</option>
+            <option value="500830">2.0</option>
+         </select>
+      </td>
+   </tr>
+</table>
+
+</form>
+</body>
+</html>

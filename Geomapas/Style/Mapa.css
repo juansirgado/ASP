@@ -1,0 +1,29 @@
+<!--
+   Instalação : EDS do Brasil - BSC
+   Descrição  : Página inicial do Controle de Atividades
+   Autor      : Juan Sirgado y Antico
+   Data       : 24/09/2000
+   Copyright(c) 2000 by EDS do Brasil, Inc. All Rights Reserved.
+   -------------------------------------------------------------
+   Alteração  :
+   Autor      :
+   Data       :
+-->
+
+a
+{font-family   : Verdana, Arial, Helvetica, sans-serif;
+font-size      : 10pt; 
+color          : #000000; 
+text-decoration: none;
+border         : none}
+
+.menu
+{font-family: arial;
+ font-weight: bold;
+ font-size  : 16px;
+ color      : #FFFFFF;}
+
+.fundo
+{background-color: #FFFFFF;
+ background-image: url(../Media/BgMapa.gif);}
+ 
