@@ -1,0 +1,248 @@
+-- Campeonato
+--------------------------------------------------------------------------------
+Insert into Campeonato (cam_cd_campeonato, cam_nm_campeonato, cam_ds_campeonato, cam_dt_inicio, cam_dt_termino, cam_vl_aposta, cam_in_classificacao)
+Values (1, 'Fifa 2010 Copa do Mundo', 'Copa do Mundo 2010(Africa do Sul)', '2006-06-11', '2006-06-11', 10.00, 0);
+--------------------------------------------------------------------------------
+
+-- Estado
+--------------------------------------------------------------------------------
+Insert Into Estado (est_cd_estado, est_nm_estado) Values('00', '*Não se aplica');
+--------------------------------------------------------------------------------
+
+-- Resultado
+--------------------------------------------------------------------------------
+Insert Into Resultado (res_cd_resultado, res_nm_resultado) Values (0, '*Pendente');
+Insert Into Resultado (res_cd_resultado, res_nm_resultado) Values (1, 'Errado');
+Insert Into Resultado (res_cd_resultado, res_nm_resultado) Values (2, 'Parcial');
+Insert Into Resultado (res_cd_resultado, res_nm_resultado) Values (3, 'Correto');
+--------------------------------------------------------------------------------
+
+-- Equipe
+--------------------------------------------------------------------------------
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (0,  '*Pendente',       '*Pendente de definição',          '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (1,  'África do Sul',   'RSA - CAF - África do Sul',       '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (2,  'México',          'MEX - CONCACAF - México',         '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (3,  'Uruguai',         'URU - CONMEBOL - Uruguai',        '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (4,  'França',          'FRA - UEFA - França',             '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (5,  'Argentina',       'ARG - CONMEBOL - Argentina',      '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (6,  'Nigéria',         'NGA - CAF - Nigéria',             '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (7,  'Coreia do Sul',   'KOR - AFC - Coreia do Sul',       '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (8,  'Grécia',          'GRE - UEFA - Grécia',             '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (9,  'Inglaterra',      'ENG - UEFA - Inglaterra',         '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (10, 'Estados Unidos',  'USA - CONCACAF - Estados Unidos', '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (11, 'Argélia',         'ALG - CAF - Argélia',             '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (12, 'Eslovênia',       'SVN - UEFA - Eslovênia',          '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (13, 'Alemanha',        'GER - UEFA - Alemanha',           '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (14, 'Austrália',       'AUS - OFC - Austrália',           '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (15, 'Sérvia',          'SRB - UEFA - Sérvia',             '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (16, 'Gana',            'GHA - CAF - Gana',                '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (17, 'Holanda',         'NED - UEFA - Holanda',            '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (18, 'Dinamarca',       'DEN - UEFA - Dinamarca',          '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (19, 'Japão',           'JPN - AFC - Japão',               '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (20, 'Camarões',        'CMR - CAF - Camarões',            '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (21, 'Itália',          'ITA - UEFA - Itália',             '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (22, 'Paraguai',        'PAR - CONMEBOL - Paraguai',       '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (23, 'Nova Zelândia',   'NZL - OFC - Nova Zelândia',       '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (24, 'Eslováquia',      'SVK - UEFA - Eslováquia',         '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (25, 'Brasil',          'BRA - CONMEBOL - Brasil',         '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (26, 'Coreia do Norte', 'PRK - AFC - Coreia do Norte',     '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (27, 'Costa do Marfim', 'CIV - CAF - Costa do Marfim',     '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (28, 'Portugal',        'POR - UEFA - Portugal',           '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (29, 'Espanha',         'ESP - UEFA - Espanha',            '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (30, 'Suíça',           'SUI - UEFA - Suíça',              '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (31, 'Honduras',        'HON - CONCACAF - Honduras',       '00');
+Insert Into Equipe (equ_cd_equipe, equ_nm_equipe, equ_ds_equipe, est_cd_estado) Values (32, 'Chile',           'CHI - CONMEBOL - Chile',          '00');
+--------------------------------------------------------------------------------
+
+-- Grupo
+--------------------------------------------------------------------------------
+Insert Into Grupo (gru_cd_grupo, gru_nm_grupo, cam_cd_campeonato) Values (0, '*Não se aplica', 1);
+Insert Into Grupo (gru_cd_grupo, gru_nm_grupo, cam_cd_campeonato) Values (1, 'A', 1);
+Insert Into Grupo (gru_cd_grupo, gru_nm_grupo, cam_cd_campeonato) Values (2, 'B', 1);
+Insert Into Grupo (gru_cd_grupo, gru_nm_grupo, cam_cd_campeonato) Values (3, 'C', 1);
+Insert Into Grupo (gru_cd_grupo, gru_nm_grupo, cam_cd_campeonato) Values (4, 'D', 1);
+Insert Into Grupo (gru_cd_grupo, gru_nm_grupo, cam_cd_campeonato) Values (5, 'E', 1);
+Insert Into Grupo (gru_cd_grupo, gru_nm_grupo, cam_cd_campeonato) Values (6, 'F', 1);
+Insert Into Grupo (gru_cd_grupo, gru_nm_grupo, cam_cd_campeonato) Values (7, 'G', 1);
+Insert Into Grupo (gru_cd_grupo, gru_nm_grupo, cam_cd_campeonato) Values (8, 'H', 1);
+--------------------------------------------------------------------------------
+
+-- Fase
+--------------------------------------------------------------------------------
+Insert Into Fase (fas_cd_fase, fas_nm_fase, cam_cd_campeonato) Values (1, 'Classificatória',    1);
+Insert Into Fase (fas_cd_fase, fas_nm_fase, cam_cd_campeonato) Values (2, 'Oitavas de Finais',  1);
+Insert Into Fase (fas_cd_fase, fas_nm_fase, cam_cd_campeonato) Values (3, 'Quartas de Finais',  1);
+Insert Into Fase (fas_cd_fase, fas_nm_fase, cam_cd_campeonato) Values (4, 'Semi Finais',        1);
+Insert Into Fase (fas_cd_fase, fas_nm_fase, cam_cd_campeonato) Values (5, 'Decisão do 3 lugar', 1);
+Insert Into Fase (fas_cd_fase, fas_nm_fase, cam_cd_campeonato) Values (6, 'Final',              1);
+--------------------------------------------------------------------------------
+
+--Parametro
+--------------------------------------------------------------------------------
+Insert Into Parametro (par_cd_parametro, par_vl_jog_derrota, par_vl_jog_empate, par_vl_jog_vitoria, par_vl_pal_errado, par_vl_pal_parcial, par_vl_pal_correto, cam_cd_campeonato, fas_cd_fase) Values (1, 0, 1, 3, 0, 1, 3, 1, 1);
+Insert Into Parametro (par_cd_parametro, par_vl_jog_derrota, par_vl_jog_empate, par_vl_jog_vitoria, par_vl_pal_errado, par_vl_pal_parcial, par_vl_pal_correto, cam_cd_campeonato, fas_cd_fase) Values (2, 0, 1, 3, 0, 1, 3, 1, 2);
+Insert Into Parametro (par_cd_parametro, par_vl_jog_derrota, par_vl_jog_empate, par_vl_jog_vitoria, par_vl_pal_errado, par_vl_pal_parcial, par_vl_pal_correto, cam_cd_campeonato, fas_cd_fase) Values (3, 0, 1, 3, 0, 1, 3, 1, 3);
+Insert Into Parametro (par_cd_parametro, par_vl_jog_derrota, par_vl_jog_empate, par_vl_jog_vitoria, par_vl_pal_errado, par_vl_pal_parcial, par_vl_pal_correto, cam_cd_campeonato, fas_cd_fase) Values (4, 0, 1, 3, 0, 1, 3, 1, 4);
+Insert Into Parametro (par_cd_parametro, par_vl_jog_derrota, par_vl_jog_empate, par_vl_jog_vitoria, par_vl_pal_errado, par_vl_pal_parcial, par_vl_pal_correto, cam_cd_campeonato, fas_cd_fase) Values (5, 0, 1, 3, 0, 2, 5, 1, 5);
+Insert Into Parametro (par_cd_parametro, par_vl_jog_derrota, par_vl_jog_empate, par_vl_jog_vitoria, par_vl_pal_errado, par_vl_pal_parcial, par_vl_pal_correto, cam_cd_campeonato, fas_cd_fase) Values (6, 0, 1, 3, 0, 2, 5, 1, 6);
+--------------------------------------------------------------------------------
+
+-- Local
+--------------------------------------------------------------------------------
+Insert Into Local (loc_cd_local, loc_nm_local, loc_ds_local, est_cd_estado) Values (1,  'Cape Town',      'Green Point Stadium',     '00');
+Insert Into Local (loc_cd_local, loc_nm_local, loc_ds_local, est_cd_estado) Values (2,  'Durban',         'Durban Stadium',          '00');
+Insert Into Local (loc_cd_local, loc_nm_local, loc_ds_local, est_cd_estado) Values (3,  'Johannesburg',   'Ellis Park Stadium',      '00');
+Insert Into Local (loc_cd_local, loc_nm_local, loc_ds_local, est_cd_estado) Values (4,  'Johannesburg',   'Soccer City Stadium',     '00');
+Insert Into Local (loc_cd_local, loc_nm_local, loc_ds_local, est_cd_estado) Values (5,  'Bloemfontein',   'Free State Stadium',      '00');
+Insert Into Local (loc_cd_local, loc_nm_local, loc_ds_local, est_cd_estado) Values (6,  'Port Elizabeth', 'Port Elizabeth Stadium',  '00');
+Insert Into Local (loc_cd_local, loc_nm_local, loc_ds_local, est_cd_estado) Values (7,  'Nelspruit',      'Mbombela Stadium',        '00');
+Insert Into Local (loc_cd_local, loc_nm_local, loc_ds_local, est_cd_estado) Values (8,  'Polokwane',      'Peter Mokaba Stadium',    '00');
+Insert Into Local (loc_cd_local, loc_nm_local, loc_ds_local, est_cd_estado) Values (9,  'Rustenburg',     'Royal Bafokeng Stadium',  '00');
+Insert Into Local (loc_cd_local, loc_nm_local, loc_ds_local, est_cd_estado) Values (10, 'Pretoria',       'Loftus Versfeld Stadium', '00');
+--------------------------------------------------------------------------------
+
+-- Campeonato / Equipe
+--------------------------------------------------------------------------------
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (1,  1, 1);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (2,  1, 2);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (3,  1, 3);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (4,  1, 4);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (5,  1, 5);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (6,  1, 6);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (7,  1, 7);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (8,  1, 8);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (9,  1, 9);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (10, 1, 10);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (11, 1, 11);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (12, 1, 12);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (13, 1, 13);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (14, 1, 14);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (15, 1, 15);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (16, 1, 16);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (17, 1, 17);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (18, 1, 18);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (19, 1, 19);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (20, 1, 20);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (21, 1, 21);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (22, 1, 22);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (23, 1, 23);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (24, 1, 24);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (25, 1, 25);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (26, 1, 26);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (27, 1, 27);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (28, 1, 28);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (29, 1, 29);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (30, 1, 30);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (31, 1, 31);
+Insert Into CamEqu (rce_cd_cam_equ, cam_cd_campeonato, equ_cd_equipe) Values (32, 1, 32);
+--------------------------------------------------------------------------------
+
+-- Jogo
+--------------------------------------------------------------------------------
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (1,  '2010/06/11 16:00:00', 'XXX & XXX', 1,  2,  0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 4);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (2,  '2010/06/11 20:30:00', 'XXX & XXX', 3,  4,  0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (3,  '2010/06/12 16:00:00', 'XXX & XXX', 5,  6,  0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 3);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (4,  '2010/06/12 13:30:00', 'XXX & XXX', 7,  8,  0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 6); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (5,  '2010/06/12 20:30:00', 'XXX & XXX', 9,  10, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 3, 9); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (6,  '2010/06/13 13:30:00', 'XXX & XXX', 11, 12, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 3, 8); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (7,  '2010/06/13 20:30:00', 'XXX & XXX', 13, 14, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 4, 2);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (8,  '2010/06/13 16:00:00', 'XXX & XXX', 15, 16, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 4, 10);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (9,  '2010/06/14 13:30:00', 'XXX & XXX', 17, 18, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 5, 4);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (10, '2010/06/14 16:00:00', 'XXX & XXX', 19, 20, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 5, 5); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (11, '2010/06/14 20:30:00', 'XXX & XXX', 21, 22, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 6, 1); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (12, '2010/06/15 13:30:00', 'XXX & XXX', 23, 24, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 6, 9); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (13, '2010/06/15 16:00:00', 'XXX & XXX', 27, 28, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 7, 6);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (14, '2010/06/15 20:30:00', 'XXX & XXX', 25, 26, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 7, 3);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (15, '2010/06/16 13:30:00', 'XXX & XXX', 31, 32, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 8, 7); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (16, '2010/06/16 16:00:00', 'XXX & XXX', 29, 30, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 8, 2);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (17, '2010/06/16 20:30:00', 'XXX & XXX', 1,  3,  0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 10);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (18, '2010/06/17 20:30:00', 'XXX & XXX', 4,  2,  0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 8); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (19, '2010/06/17 16:00:00', 'XXX & XXX', 8,  6,  0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 5);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (20, '2010/06/17 13:30:00', 'XXX & XXX', 5,  7,  0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 4);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (21, '2010/06/18 13:30:00', 'XXX & XXX', 13, 15, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 4, 6); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (22, '2010/06/18 16:00:00', 'XXX & XXX', 12, 10, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 3, 3);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (23, '2010/06/18 20:30:00', 'XXX & XXX', 9,  11, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 3, 1); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (24, '2010/06/19 16:00:00', 'XXX & XXX', 16, 14, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 4, 9); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (25, '2010/06/19 13:30:00', 'XXX & XXX', 17, 19, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 5, 2); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (26, '2010/06/19 20:30:00', 'XXX & XXX', 20, 18, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 5, 10);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (27, '2010/06/20 13:30:00', 'XXX & XXX', 24, 22, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 6, 5);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (28, '2010/06/20 16:00:00', 'XXX & XXX', 21, 23, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 6, 7);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (29, '2010/06/20 20:30:00', 'XXX & XXX', 25, 27, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 7, 4);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (30, '2010/06/21 13:30:00', 'XXX & XXX', 28, 26, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 7, 1); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (31, '2010/06/21 16:00:00', 'XXX & XXX', 32, 30, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 8, 6);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (32, '2010/06/21 20:30:00', 'XXX & XXX', 29, 31, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 8, 3);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (33, '2010/06/22 16:00:00', 'XXX & XXX', 2,  3,  0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 9); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (34, '2010/06/22 16:00:00', 'XXX & XXX', 4,  1,  0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 5); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (35, '2010/06/22 20:30:00', 'XXX & XXX', 6,  7,  0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (36, '2010/06/22 20:30:00', 'XXX & XXX', 8,  5,  0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 8); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (37, '2010/06/23 16:00:00', 'XXX & XXX', 12, 9,  0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 3, 6); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (38, '2010/06/23 16:00:00', 'XXX & XXX', 10, 11, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 3, 10);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (39, '2010/06/23 20:30:00', 'XXX & XXX', 16, 13, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 4, 4);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (40, '2010/06/23 20:30:00', 'XXX & XXX', 14, 15, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 4, 7);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (41, '2010/06/24 16:00:00', 'XXX & XXX', 24, 21, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 6, 3);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (42, '2010/06/24 16:00:00', 'XXX & XXX', 22, 23, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 6, 8);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (43, '2010/06/24 20:30:00', 'XXX & XXX', 18, 19, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 5, 9); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (44, '2010/06/24 20:30:00', 'XXX & XXX', 20, 17, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 5, 1);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (45, '2010/06/25 16:00:00', 'XXX & XXX', 28, 25, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 7, 2); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (46, '2010/06/25 16:00:00', 'XXX & XXX', 26, 27, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 7, 7); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (47, '2010/06/25 20:30:00', 'XXX & XXX', 32, 29, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 8, 10);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (48, '2010/06/25 20:30:00', 'XXX & XXX', 30, 31, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 8, 5); 
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (49, '2010/06/26 16:00:00', '1A & 2B',   0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 0, 6);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (50, '2010/06/26 20:30:00', '1C & 2D',   0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 0, 9);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (51, '2010/06/27 16:00:00', '1D & 2C',   0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 0, 5);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (52, '2010/06/27 20:30:00', '1B & 2A',   0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 0, 4);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (53, '2010/06/28 16:00:00', '1E & 2F',   0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 0, 2);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (54, '2010/06/28 20:30:00', '1G & 2H',   0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 0, 3);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (55, '2010/06/29 16:00:00', '1F & 2E',   0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 0, 10);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (56, '2010/06/29 20:30:00', '1H & 2G',   0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 0, 1);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (57, '2010/07/02 16:00:00', 'W53 & W54', 0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 0, 6);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (58, '2010/07/02 20:30:00', 'W49 & W50', 0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 0, 4);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (59, '2010/07/03 16:00:00', 'W52 & W51', 0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 0, 1);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (60, '2010/07/03 20:30:00', 'W55 & W56', 0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 0, 3);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (61, '2010/07/06 20:30:00', 'W58 & W57', 0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 0, 1);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (62, '2010/07/07 20:30:00', 'W59 & W60', 0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 0, 2);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (63, '2010/07/10 20:30:00', 'L61 & L62', 0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 5, 0, 6);
+Insert Into Jogo (jog_cd_jogo, jog_dt_jogo, jog_ds_jogo, equ_cd_equipe_1, equ_cd_equipe_2, jog_qt_gol90_equ_1, jog_qt_gol90_equ_2, jog_qt_gol_equ_1, jog_qt_gol_equ_2, jog_qt_cartao_am_1, jog_qt_cartao_am_2, jog_qt_cartao_vr_1, jog_qt_cartao_vr_2, cam_cd_campeonato, fas_cd_fase, gru_cd_grupo, loc_cd_local) Values (64, '2010/07/11 20:30:00', 'W61 & W62', 0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 6, 0, 4);
+--------------------------------------------------------------------------------
+
+-- Classificacao
+--------------------------------------------------------------------------------
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (1,  0, 0, 0, 0, 0, 0, 0, 0, 1, 1);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (2,  0, 0, 0, 0, 0, 0, 0, 0, 1, 2);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (3,  0, 0, 0, 0, 0, 0, 0, 0, 1, 3);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (4,  0, 0, 0, 0, 0, 0, 0, 0, 1, 4);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (5,  0, 0, 0, 0, 0, 0, 0, 0, 1, 5);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (6,  0, 0, 0, 0, 0, 0, 0, 0, 1, 6);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (7,  0, 0, 0, 0, 0, 0, 0, 0, 1, 7);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (8,  0, 0, 0, 0, 0, 0, 0, 0, 1, 8);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (9,  0, 0, 0, 0, 0, 0, 0, 0, 1, 9);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (10, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (11, 0, 0, 0, 0, 0, 0, 0, 0, 1, 11);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (12, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (13, 0, 0, 0, 0, 0, 0, 0, 0, 1, 13);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (14, 0, 0, 0, 0, 0, 0, 0, 0, 1, 14);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (15, 0, 0, 0, 0, 0, 0, 0, 0, 1, 15);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (16, 0, 0, 0, 0, 0, 0, 0, 0, 1, 16);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (17, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (18, 0, 0, 0, 0, 0, 0, 0, 0, 1, 18);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (19, 0, 0, 0, 0, 0, 0, 0, 0, 1, 19);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (20, 0, 0, 0, 0, 0, 0, 0, 0, 1, 20);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (21, 0, 0, 0, 0, 0, 0, 0, 0, 1, 21);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (22, 0, 0, 0, 0, 0, 0, 0, 0, 1, 22);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (23, 0, 0, 0, 0, 0, 0, 0, 0, 1, 23);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (24, 0, 0, 0, 0, 0, 0, 0, 0, 1, 24);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (25, 0, 0, 0, 0, 0, 0, 0, 0, 1, 25);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (26, 0, 0, 0, 0, 0, 0, 0, 0, 1, 26);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (27, 0, 0, 0, 0, 0, 0, 0, 0, 1, 27);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (28, 0, 0, 0, 0, 0, 0, 0, 0, 1, 28);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (29, 0, 0, 0, 0, 0, 0, 0, 0, 1, 29);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (30, 0, 0, 0, 0, 0, 0, 0, 0, 1, 30);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (31, 0, 0, 0, 0, 0, 0, 0, 0, 1, 31);
+Insert Into Classificacao (cla_cd_classificacao, cla_qt_vitoria, cla_qt_empate, cla_qt_derrota, cla_qt_gol_pro, cla_qt_gol_contra, cla_qt_cartao_am, cla_qt_cartao_vr, cla_qt_pontos, cam_cd_campeonato, equ_cd_equipe) Values (32, 0, 0, 0, 0, 0, 0, 0, 0, 1, 32);
+--------------------------------------------------------------------------------
+
+-- Pessoa
+--------------------------------------------------------------------------------
+Insert Into Pessoa (pes_cd_pessoa, pes_nm_pessoa, pes_cd_identificacao, pes_nu_cpf, pes_nu_rg,pes_nu_telefone, pes_nu_celular, pes_ds_email, pes_dt_nascimento,pes_cd_acesso,pes_in_nivel) Values (0, 'Usuário de Teste', 'Teste', 0, 0, 0, 0, 'xxx@email.com',         '1900/01/01', '*X/gqg', 0);
+Insert Into Pessoa (pes_cd_pessoa, pes_nm_pessoa, pes_cd_identificacao, pes_nu_cpf, pes_nu_rg,pes_nu_telefone, pes_nu_celular, pes_ds_email, pes_dt_nascimento,pes_cd_acesso,pes_in_nivel) Values (1, 'Juan Antico',      'Juan',  0, 0, 0, 0, 'juan.antico@gmail.com', '1900/01/01', '*X/gqg', 1);
+--------------------------------------------------------------------------------
